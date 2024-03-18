@@ -1,0 +1,1 @@
+export const API_PATH = "https://redmangoapi.azurewebsites.net/api/";
