@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { API_PATH } from "../../../constants";
 import { menuItemModel } from "../../../Interfaces";
+import MenuItemCard from './MenuItemCard';
 
 function MenuItemList() {
 
@@ -15,7 +16,9 @@ function MenuItemList() {
     }, [])
 
   return (
-    <div>MenuItemList</div>
+    <div className="container row">{menuItems.length > 0 && menuItems.map((menuItem, index) => (
+      <MenuItemCard key={index} menuItem={menuItem} />
+    ))}</div>
   )
 }
 
