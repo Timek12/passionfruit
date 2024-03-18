@@ -4,7 +4,7 @@ import { Home } from "../Pages";
 
 function App() {
   return (
-    <div className="text-white">
+    <div>
       <Header />
       <Home />
       <Footer />
